@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced TODO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container_main">
+        <div class="container">
+            <h1>Task Scheduler</h1>
+
+            <div class="input_container">
+                <label for="taskInput" class="label">Task Name</label>
+                <input type="text" placeholder="Enter Task..." id="taskInput">
+
+                <label for="taskDescription"  class="label">Task Description</label>
+                <textarea name="" id="taskDescription" placeholder="Describe the task..." cols="" rows=""></textarea>
+
+                <label for="taskDate" class="label">Task Date</label>
+                <input type="date" id="taskDate">
+
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
